@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "products": {
+    "perfume-017": "demo:perfume-017"
+  },
+  "classifiers": {
+    "demo-nose.v1": {
+      "lilac": "demo:lilac"
+    }
+  },
+  "mpegV": {
+    "demo:lilac": "lilac"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "device": "simulator-a",
+  "slots": {
+    "slot-1": "demo:lilac",
+    "slot-2": "demo:perfume-017"
+  }
+}

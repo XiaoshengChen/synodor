@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "kind": "classification",
+  "model": "demo-nose.v1",
+  "label": "lilac"
+}

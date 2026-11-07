@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SynOdor installed cartridges v1",
+  "definitions": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "device": {
+      "$ref": "#/definitions/id"
+    },
+    "slots": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/id"
+      }
+    }
+  },
+  "required": [
+    "version",
+    "device",
+    "slots"
+  ],
+  "additionalProperties": false
+}

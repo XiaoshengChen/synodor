@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SynOdor input event v1",
+  "definitions": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "kind": {
+          "const": "product"
+        },
+        "sku": {
+          "$ref": "#/definitions/id"
+        }
+      },
+      "required": [
+        "version",
+        "kind",
+        "sku"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "kind": {
+          "const": "classification"
+        },
+        "model": {
+          "$ref": "#/definitions/id"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "version",
+        "kind",
+        "model",
+        "label"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

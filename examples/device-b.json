@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "device": "simulator-b",
+  "slots": {
+    "port-7": "demo:perfume-017"
+  }
+}

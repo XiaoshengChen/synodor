@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SynOdor mapping catalog v1",
+  "definitions": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "products": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/id"
+      }
+    },
+    "classifiers": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/id"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "propertyNames": {
+          "$ref": "#/definitions/id"
+        },
+        "additionalProperties": {
+          "$ref": "#/definitions/id"
+        }
+      }
+    },
+    "mpegV": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/definitions/id"
+      },
+      "additionalProperties": {
+        "enum": [
+          "lilac"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "products",
+    "classifiers",
+    "mpegV"
+  ],
+  "additionalProperties": false
+}

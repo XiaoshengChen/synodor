@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sedl:SEM xmlns:sedl="urn:mpeg:mpeg-v:2010:01-SEDL-NS"
+          xmlns:sev="urn:mpeg:mpeg-v:2010:01-SEV-NS"
+          xmlns:si="urn:mpeg:mpeg21:2003:01-DIA-XSI-NS"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <sedl:Effect xsi:type="sev:ScentType" scent="urn:mpeg:mpeg-v:01-SI-ScentCS-NS:lilac" si:pts="0"/>
+</sedl:SEM>

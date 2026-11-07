@@ -1,0 +1,33 @@
+{
+  "name": "@xiaoshengchen/synodor",
+  "version": "0.1.0",
+  "description": "Offline digital olfaction toolkit for e-nose events, perfume preview and MPEG-V scent metadata.",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./src/index.js",
+  "bin": {
+    "synodor": "./bin/synodor.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node bin/synodor.js play examples/product.json examples/catalog.json examples/device.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaoshengChen/synodor.git"
+  },
+  "keywords": [
+    "digital-olfaction",
+    "electronic-nose",
+    "olfactory-display",
+    "scent-playback",
+    "mpeg-v",
+    "perfume"
+  ],
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
