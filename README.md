@@ -2,15 +2,15 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
-**Your user picks the perfume. SynOdor finds the cartridge.**
+**SynOdor is an open-source translator that turns scent recognition results into playback requests for scent devices.**
 
-A perfume preview button should work wherever the matching sample is loaded. Give SynOdor the product ID and the device’s cartridge list. It returns the slot to use, or `unsupported` if the sample is missing. The same app request works across different slot layouts.
+An electronic nose reports a label such as `lilac`. SynOdor looks up that label for the specific model, resolves it to a scent ID, and checks what the target device can play. Your app or AI agent gets a JSON plan naming the device and slot to pass to its driver. An unknown label returns `unknown`. A recognized scent the device cannot play returns `unsupported`.
 
-SynOdor is an offline digital olfaction toolkit for cartridge-based olfactory displays. It also accepts classification events from electronic noses and exports a lilac scent effect as MPEG-V XML.
+**v0.1.0 · MIT · Node.js 22+ · Runs offline.**
 
-**v0.1.0 · Node.js 22+ · MIT.** The demo uses two simulated devices. Once installed, SynOdor runs locally without a network connection or an AI model.
+## Demo: perfume preview
 
-## Try a perfume preview
+A user taps a perfume to sample it. The product ID supplies the scent identity directly, so this app can use the same playback logic without an electronic nose. Try the same request on two simulated devices with different slot layouts.
 
 ```sh
 git clone https://github.com/XiaoshengChen/synodor.git
