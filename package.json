@@ -1,7 +1,7 @@
 {
   "name": "@xiaoshengchen/synodor",
   "version": "0.1.0",
-  "description": "Offline digital olfaction toolkit for e-nose events, perfume preview and MPEG-V scent metadata.",
+  "description": "Offline digital olfaction toolkit that translates odor recognition results into scent playback requests.",
   "license": "MIT",
   "type": "module",
   "exports": "./src/index.js",
@@ -22,6 +22,9 @@
   "keywords": [
     "digital-olfaction",
     "electronic-nose",
+    "odor-recognition",
+    "machine-olfaction",
+    "odor-classification",
     "olfactory-display",
     "scent-playback",
     "mpeg-v",

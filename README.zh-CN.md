@@ -1,10 +1,10 @@
-# SynOdor
+# SynOdor · 数字嗅觉工具包
 
 [English](README.md) · **简体中文**
 
 **SynOdor 是一个开源翻译器，把气味识别结果转成终端播放请求。**
 
-电子鼻识别出“丁香”（`lilac`）。SynOdor 按模型查到这个标签对应的气味 ID，再核对目标终端能播放哪些气味。应用或 AI agent 会拿到一份 JSON 播放计划，里面的设备和槽位可以直接交给驱动。遇到陌生标签，返回 `unknown`。气味已知但终端播不了，返回 `unsupported`。
+例如，电子鼻（e-nose）的气味分类模型识别出“丁香”（`lilac`）。SynOdor 按模型查到这个标签对应的气味 ID，再核对气味播放终端（olfactory display）当前支持哪些气味。应用或 AI agent 会拿到一份 JSON 播放计划，里面的设备和槽位可以直接交给驱动。遇到陌生标签，返回 `unknown`。气味已知但终端播不了，返回 `unsupported`。
 
 **v0.1.0 · MIT · Node.js 22+ · 离线运行**
 

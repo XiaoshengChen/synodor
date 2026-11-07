@@ -1,10 +1,10 @@
-# SynOdor
+# SynOdor · Digital olfaction toolkit
 
 **English** · [简体中文](README.zh-CN.md)
 
 **SynOdor is an open-source translator that turns scent recognition results into playback requests for scent devices.**
 
-An electronic nose reports a label such as `lilac`. SynOdor looks up that label for the specific model, resolves it to a scent ID, and checks what the target device can play. Your app or AI agent gets a JSON plan naming the device and slot to pass to its driver. An unknown label returns `unknown`. A recognized scent the device cannot play returns `unsupported`.
+An electronic nose (e-nose) runs an odor recognition model and reports a label such as `lilac`. SynOdor looks up that label for the specific model, resolves it to a scent ID, and checks which scents the target olfactory display can play. Your app or AI agent gets a JSON plan naming the device and slot to pass to its driver. An unknown label returns `unknown`. A recognized scent the device cannot play returns `unsupported`.
 
 **v0.1.0 · MIT · Node.js 22+ · Runs offline.**
 
