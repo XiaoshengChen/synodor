@@ -1,8 +1,14 @@
 # SynOdor
 
-An offline digital olfaction toolkit for perfume previews, electronic noses and cartridge-based olfactory displays. Give it a perfume SKU or a model's classification event and a list of loaded cartridges. It returns the slot holding the requested scent. It can also export one named scent effect as MPEG-V XML.
+**English** · [简体中文](README.zh-CN.md)
 
-**v0.1.0 · Node.js 22+ · MIT.** The two example devices and their readings are simulated. All translation takes place locally after installation. No account, model weights, network request or LLM tokens are needed at runtime.
+**Your user picks the perfume. SynOdor finds the cartridge.**
+
+A perfume preview button should work wherever the matching sample is loaded. Give SynOdor the product ID and the device’s cartridge list. It returns the slot to use, or `unsupported` if the sample is missing. The same app request works across different slot layouts.
+
+SynOdor is an offline digital olfaction toolkit for cartridge-based olfactory displays. It also accepts classification events from electronic noses and exports a lilac scent effect as MPEG-V XML.
+
+**v0.1.0 · Node.js 22+ · MIT.** The demo uses two simulated devices. Once installed, SynOdor runs locally without a network connection or an AI model.
 
 ## Try a perfume preview
 
